@@ -10,7 +10,10 @@ void button_callback(Fl_Widget* widget, void* data) {
     box->redraw();
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
+    Fl::set_font(FL_HELVETICA, "-wenquanyi-wenquanyi bitmap song-medium-r-normal--16-160-75-75-p-80-iso10646-1");
+
     Fl_Window* window = new Fl_Window(400, 300, "FLTK Test");
 
     Fl_Box* box = new Fl_Box(50, 50, 300, 100, "FLTK 1.4.4 Static Library Test");
